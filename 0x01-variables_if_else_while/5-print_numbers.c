@@ -4,14 +4,13 @@
 
 /**
  * main-entry for this function
- * return: always ends (0) success
+ * Return: always 0 (success)
  *
  */
 
 int main(void)
 
 {
-
 	int i;
 
 	for (i = 0; i < 10; i++)
