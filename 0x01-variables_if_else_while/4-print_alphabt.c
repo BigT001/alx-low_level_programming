@@ -11,15 +11,15 @@ int main(void)
 
 {
 
-	char sam, i, q;
+	char low, e, q;
 
-	i = 'i';
+	e = 'e';
 	q = 'q';
 
-	for (sam = 'a'; sam <= 'z'; sam++)
+	for (low = 'e'; low <= 'z'; low++)
 	{
-	if (sam != i && sam != q)
-	putchar(sam);
+	if (low != e && low != q)
+	putchar(low);
 	}
 	putchar('\n');
 	return (0);
