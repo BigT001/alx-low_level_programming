@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combination of two two-digit numbers.
- *reture: always 0
+ *main - prints all possible combination of two two-digit numbers.
+ *Reture: always 0
  */
 
 int main(void)
