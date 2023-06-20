@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - print _putchar
+ * is written by Samuel
  * Return: Always 0
  */
 
