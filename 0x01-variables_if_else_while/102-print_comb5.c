@@ -4,7 +4,7 @@
 
 /**
  *main - Prints all possible combination of two two-digit numbers.
- *Reture: Always 0.
+ *Return: Always 0.
  */
 
 int main(void)
@@ -29,7 +29,7 @@ int main(void)
 		}
 	}
 
-	putchar('n');
+	putchar('\n');
 
 	return (0);
 
