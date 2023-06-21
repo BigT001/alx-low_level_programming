@@ -1,5 +1,5 @@
 /**
- * main - check the code
+ * main - checking the cod
  *
  * Return: Always 0.
  */
