@@ -2,27 +2,28 @@
 
 /**
  * leet - encode into 1337speak
- * @n: input value
+ * @s: input value
  *
- * Return: n value
+ * Return: s value
  */
 
-char *leet(char *n)
+char *leet(char *s)
 {
-int i, j;
-char s1[] = "aAeEoOtTlL";
-char s2[] = "4433007711";
+	char a[] = "aeotlAEOTL";
+	char n[] = "4307143071";
+	int i = 0;
+	int j;
 
-for (i = 0; n[i] != '\0'; i++)
-{
-for (j = 0; j < 10; j++)
-{
-if (n[i] == s1[j])
-{
-n[i] = s2[j];
+	while (*(s + i) != '\0')
+	{
+	for (j = 0; j <= 9; j++)
+	{
+	if (*(s + i) == a[j])
+	{
+	*(s + i) = n[j];
+	}
+	}
+	i++;
+	}
+	return (s);
 }
-}
-}	
-return (n);
-}
-
