@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/**
+ *main - where the function starts
+ */
 int main(void)
 {
 int n;
