@@ -7,30 +7,20 @@
  * Return: converted number
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
-	unsigned int as;
-	int len, base_two;
+	int x;
+	unsigned int decval = 0;
 
 	if (!b)
 		return (0);
 
-	as = 0;
-
-	for (len = 0; b[len] != '\0'; len++)
-		;
-
-	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
+	for (x = 0; b[x]; x++)
 	{
-		if (b[len] != '0' && b[len] != '1')
-		{
+		if (b[x] < '0' || b[x] > '1')
 			return (0);
-		}
-
-	if (b[len] & 1)
-	{
-		as += base_two;
+		decval = 2 * decval + (b[x] - '0');
 	}
-	}
-	return (as);
+	return (decval);
 }
+
